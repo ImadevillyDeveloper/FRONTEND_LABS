@@ -1,0 +1,267 @@
+.homePage {
+  padding: 20px 0;
+}
+
+.hero {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.heroTitle {
+  color: #ff6600;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.aboutContent {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.avatarPlaceholder {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff7d36, #ff6600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #ff6600;
+  box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+}
+
+.avatarText {
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.introText {
+  flex: 1;
+}
+
+.introLine {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin: 8px 0;
+  color: #8B4513;
+  font-weight: 500;
+}
+
+.introLineCrossed {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin: 8px 0;
+  color: #8B4513;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.highlight {
+  font-weight: 700;
+  color: #ff6600;
+}
+
+.description {
+  color: #8B4513;
+  line-height: 1.8;
+}
+
+.quote {
+  background-color: #fffaf0;
+  border-left: 4px solid #ff6600;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.quoteIcon {
+  color: #ff6600;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.quote blockquote {
+  margin: 0;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.quote cite {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.motto {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #ff6600;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.contactLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  background-color: #e55a00;
+  transform: translateY(-2px);
+}
+
+.separator {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.hobbies {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sectionTitle {
+  color: #ff6600;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.hobbyList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hobbyItem {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fffaf0;
+  border: 2px solid rgba(255, 102, 0, 0.1);
+}
+
+.hobbyTitle {
+  color: #ff6600;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 102, 0, 0.3);
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.imageWrapper {
+  aspect-ratio: 4/3;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ffe6cc, #ffd9b3);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff6600;
+  font-weight: 600;
+  border: 2px dashed #ffb380;
+}
+
+.hobbyItem p {
+  line-height: 1.6;
+  color: #5d4037;
+  margin: 10px 0;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid #ff6600;
+  box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+  /* background добавляется через inline-style */
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+  
+  .aboutContent {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .avatarPlaceholder {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .introLine,
+  .introLineCrossed {
+    font-size: 1.2rem;
+  }
+  
+  .imageGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contactLinks {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .separator {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 1.8rem;
+  }
+  
+  .hero,
+  .hobbies {
+    padding: 20px;
+  }
+  
+  .imageGrid {
+    grid-template-columns: 1fr;
+  }
+}
